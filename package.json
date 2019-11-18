@@ -1,0 +1,19 @@
+{
+  "name": "fylo",
+  "version": "1.0.0",
+  "description": "fylo landing page",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html --public-url ./",
+    "pre-deploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cssnano": "^4.1.10",
+    "gh-pages": "^2.0.1",
+    "node-sass": "^4.11.0"
+  }
+}
